@@ -56,3 +56,44 @@
     border: none;
     color: white;
 }
+
+#tutorial {
+    margin: 20px 0px 20px 0px;
+}
+
+#tutorial-header {
+    margin: 0px 20px 20px 21px;
+}
+
+.tutorial-numbers {
+    position: relative;
+    left: -45px;
+    padding: 5px 10px 5px 10px;
+    background-color: #9356DC;
+    border-radius: 100%;
+    color: white;
+}
+
+#tutorial-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tutorial-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(246, 246, 246);
+    gap: 10px;
+    margin: 0px 20px 0px 20px;
+    border-radius: 20px;
+    padding: 20px 20px 20px 30px;
+    font-weight: bold;
+    box-shadow: 0px 3px 5px lightgrey;
+    font-size: 0.8em;
+}
+
+.tutorial-box:hover {
+    background-color: #e7a8fb6b;
+}
