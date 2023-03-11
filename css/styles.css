@@ -14,10 +14,26 @@
          url('../assets/fonts/roboto-regular-webfont.woff') format('woff');
 }
 
-#Shrikhand {
-    font-family: 'Shrikhand';
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
 }
 
-#Roboto {
+#header-logo {
+    font-family: 'Shrikhand';
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+
+#location-selector {
     font-family: 'Roboto';
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightgray;
+    padding: 10px 0px 10px 0px;
 }
