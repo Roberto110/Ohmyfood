@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+}
+
 @font-face {
     font-family: 'Shrikhand';
     font-style: normal;
@@ -12,14 +20,6 @@
     font-weight: 400;
     src: url('../assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
          url('../assets/fonts/roboto-regular-webfont.woff') format('woff');
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    scroll-behavior: smooth;
-    font-family: 'Roboto';
 }
 
 #header-logo {
@@ -55,9 +55,10 @@
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: none;
     color: white;
+    text-decoration: none;
 }
 
-#tutorial {
+#tutorial-section {
     margin: 20px 0px 20px 0px;
 }
 
@@ -96,4 +97,30 @@
 
 .tutorial-box:hover {
     background-color: #e7a8fb6b;
+}
+
+#restaurants {
+    background-color: rgb(246, 246, 246);
+}
+
+#restaurants-title {
+    margin: 20px 0px 0px 21px;
+}
+
+.restaurant-card {
+    margin: 21px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.restaurant-card-pic {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-info {
+    padding: 5px 0px 10px 10px;
 }
