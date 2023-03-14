@@ -22,8 +22,11 @@
          url('../assets/fonts/roboto-regular-webfont.woff') format('woff');
 }
 
-#header-logo {
-    font-family: 'Shrikhand';
+.shrikhand-font {
+font-family: 'Shrikhand';
+}
+
+.header-logo {
     text-align: center;
     padding: 15px 0px 15px 0px;
 }
@@ -49,14 +52,24 @@
     background-color: rgb(246, 246, 246);
 }
 
-#explore-button {
+/* Button classes */
+
+.elevated-btn {
     padding: 10px 15px 10px 15px;
-    border-radius: 20px;
-    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     border: none;
-    color: white;
     text-decoration: none;
 }
+
+.purple-btn {
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: white;
+}
+
+.round-btn {
+    border-radius: 20px;
+}
+
+/* End button classes */
 
 #tutorial-section {
     margin: 20px 0px 20px 0px;
@@ -67,8 +80,8 @@
 }
 
 .tutorial-numbers {
-    position: relative;
-    left: -45px;
+    position: absolute;
+    left: 22px;
     padding: 5px 10px 5px 10px;
     background-color: #9356DC;
     border-radius: 100%;
@@ -85,7 +98,7 @@
     align-items: center;
     background-color: rgb(246, 246, 246);
     gap: 10px;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 20px 35px;
     border-radius: 20px;
     padding: 20px 20px 20px 30px;
     font-weight: bold;
@@ -100,11 +113,14 @@
 #restaurants-section {
     background-color: rgb(246, 246, 246);
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
 }
 
 #restaurants-title {
-    margin: 0px 0px 0px 21px;
-    padding-top: 20px;
+    margin: 20px 0px 0px 21px;
 }
 
 .restaurant-card {
@@ -131,7 +147,6 @@ footer {
 }
 
 #footer-logo {
-    font-family: 'Shrikhand';
     padding: 10px 0px 10px 0px;
 }
 
@@ -144,4 +159,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.fa-utensils {
+    font-size: 10px;
+}
+
+.fa-handshake-angle {
+    font-size: 10px;
 }
