@@ -26,6 +26,15 @@
 font-family: 'Shrikhand';
 }
 
+.left-right-margin {
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 .header-logo {
     text-align: center;
     padding: 15px 0px 15px 0px;
@@ -68,6 +77,12 @@ font-family: 'Shrikhand';
 .round-btn {
     border-radius: 20px;
 }
+
+.order-btn {
+    align-self: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}/
 
 /* End button classes */
 
@@ -192,4 +207,42 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.menu-content {
+    background-color: rgb(246, 246, 246);
+    padding: 40px 0px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.menu-segment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.segment.title {
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 10px;
+    margin: 0px 10px;
+    gap: 3px;
+}
+
+.menu-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-font {
+    font-size: 12px;
 }
