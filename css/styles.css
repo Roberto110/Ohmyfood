@@ -67,6 +67,7 @@ font-family: 'Shrikhand';
     padding: 10px 15px 10px 15px;
     border: none;
     text-decoration: none;
+    box-shadow: 0px 0px 5px 1px lightgray;
 }
 
 .purple-btn {
@@ -82,6 +83,7 @@ font-family: 'Shrikhand';
     align-self: center;
     padding-left: 60px;
     padding-right: 60px;
+    margin-top: 20px;
 }/
 
 /* End button classes */
@@ -175,6 +177,11 @@ footer {
     margin: 0px 21px 0px 21px;
 }
 
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
 .footer-icons {
     display: flex;
     align-items: center;
@@ -207,11 +214,14 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+    margin-bottom: -50px;
+    z-index: -1;
+    position: relative;
 }
 
 .menu-content {
     background-color: rgb(246, 246, 246);
-    padding: 40px 0px;
+    padding: 30px 0px;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
 }
@@ -222,9 +232,19 @@ footer {
     gap: 10px;
 }
 
-.segment.title {
+.segment-title {
     margin-left: 21px;
     margin-right: 21px;
+    margin: 20px 21px 0px 21px;
+    /* margin-bottom: px; */
+}
+
+.segment-title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    display: block;
+    background: #99E2D0;
 }
 
 .menu-item {
@@ -235,6 +255,14 @@ footer {
     padding: 10px 20px 10px 10px;
     margin: 0px 10px;
     gap: 3px;
+    box-shadow: 0px 0px 5px 1px lightgray;
+}
+
+.menu-desc {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80%;
 }
 
 .menu-details {
@@ -244,5 +272,9 @@ footer {
 }
 
 .small-font {
-    font-size: 12px;
+    font-size: 13px;
+}
+
+.menu-title {
+    margin: 0px 21px 10px 21px;
 }
