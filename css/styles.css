@@ -93,7 +93,7 @@ font-family: 'Shrikhand';
 }
 
 #tutorial-header {
-    margin: 0px 20px 20px 21px;
+    margin: 20px 20px 20px 21px;
 }
 
 .tutorial-numbers {
@@ -144,6 +144,7 @@ font-family: 'Shrikhand';
     margin: 10px 21px 15px 21px;
     background-color: white;
     border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px lightgray;
 }
 
 .restaurant-card-pic {
@@ -172,7 +173,7 @@ footer {
     padding: 10px 0px 10px 0px;
 }
 
-#footer-links {
+.footer-links {
     color: white;
     margin: 0px 21px 0px 21px;
 }
