@@ -212,7 +212,7 @@ footer {
 
 .menu-pic {
     width: 100%;
-    height: auto;
+    height: 200px;
     object-fit: cover;
     margin-bottom: -50px;
     z-index: -1;
@@ -277,4 +277,8 @@ footer {
 
 .menu-title {
     margin: 0px 21px 10px 21px;
+}
+
+.item-title {
+    width: 85%;
 }
