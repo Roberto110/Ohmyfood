@@ -269,6 +269,11 @@ footer {
     margin: 0px 10px;
     gap: 3px;
     box-shadow: 0px 0px 5px 1px lightgray;
+    opacity: 1;
+    transform: translateY(20px);
+    animation-fill-mode: forwards;
+    animation: menu-slide-in 1s ease 400ms;
+    opacity: 0;
 }
 
 .menu-desc {
@@ -294,4 +299,16 @@ footer {
 
 .item-title {
     width: 85%;
+}
+
+@keyframes menu-slide-in {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
