@@ -271,9 +271,9 @@ footer {
     box-shadow: 0px 0px 5px 1px lightgray;
     opacity: 1;
     transform: translateY(20px);
-    animation-fill-mode: forwards;
     animation: menu-slide-in 1s ease 400ms;
     opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .menu-desc {
