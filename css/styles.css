@@ -269,7 +269,6 @@ footer {
     margin: 0px 10px;
     gap: 3px;
     box-shadow: 0px 0px 5px 1px lightgray;
-    opacity: 1;
     transform: translateY(20px);
     animation: menu-slide-in 1s ease 400ms;
     opacity: 0;
@@ -309,6 +308,40 @@ footer {
 
     100% {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fa-heart {
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+}
+
+.heart-outline {
+    color: gray;
+}
+
+.heart-solid {
+    background: linear-gradient(#FF79DA, #9356DC);
+    opacity: 0;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    padding: 10px 0px;
+    bottom: 25px;
+}
+
+.heart-solid:hover {
+    animation: heartFill 500ms ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heartFill {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
 }
