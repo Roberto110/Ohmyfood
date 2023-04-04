@@ -148,6 +148,11 @@ font-family: 'Shrikhand';
     position: relative;
 }
 
+.restaurant-card:hover {
+    box-shadow: 0px 0px 5px 1px grey;
+    opacity: 0.9;
+}
+
 .new-marker {
     position: absolute;
     right: 15px;
@@ -245,6 +250,27 @@ footer {
     gap: 10px;
 }
 
+.menu-entree {
+    transform: translateY(20px);
+    animation: menu-slide-in 1s ease 400ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.menu-main {
+    transform: translateY(20px);
+    animation: menu-slide-in 1s ease 700ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.menu-dessert {
+    transform: translateY(20px);
+    animation: menu-slide-in 1s ease 1000ms;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
 .segment-title {
     margin-left: 21px;
     margin-right: 21px;
@@ -269,10 +295,6 @@ footer {
     margin: 0px 10px;
     gap: 3px;
     box-shadow: 0px 0px 5px 1px lightgray;
-    transform: translateY(20px);
-    animation: menu-slide-in 1s ease 400ms;
-    opacity: 0;
-    animation-fill-mode: forwards;
 }
 
 .menu-desc {
