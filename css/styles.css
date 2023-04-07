@@ -311,6 +311,8 @@ footer {
     width: 65px;
     height: 100%;
     background: #99E2D0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,5 +414,46 @@ footer {
 
     100% {
         opacity: 1;
+    }
+}
+
+.loading {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 100ms linear 3s;
+    animation-fill-mode: forwards;
+    opacity: 0.6;
+}
+
+.spinner {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 30px solid lightgrey;
+    border-top-color: transparent;
+    animation: rotate 1s ease-in-out infinite;
+}
+      
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.6;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
     }
 }
