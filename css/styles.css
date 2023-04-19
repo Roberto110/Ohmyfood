@@ -150,6 +150,12 @@ font-family: 'Shrikhand';
     margin: 20px 0px 0px 21px;
 }
 
+.restaurant-cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .restaurant-card {
     margin: 10px 21px 15px 21px;
     background-color: white;
@@ -382,15 +388,6 @@ footer {
     animation-fill-mode: forwards;
   }
 
-.item-price {
-    transition: 1s ease;
-}
-
-.menu-item:hover .item-price {
-    transform: translateX(-65px);
-    transition: transform 1s ease;
-}
-
   /* End of Tick transition */
 
 .menu-desc {
@@ -400,13 +397,19 @@ footer {
 }
 
 .menu-item:hover .menu-desc {
-    width: calc(100% - 100px);
+    width: 80%;
 }
 
 .menu-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1s ease;
+    width: 100%;
+}
+
+.menu-item:hover .menu-details{
+    width: calc(100% - 65px);
 }
 
 .small-font {
@@ -534,4 +537,22 @@ footer {
         align-items: center;
         gap: 20px;
     }
+
+    #restaurants-section {
+        overflow: scroll;
+    }
+
+    .restaurant-cards {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .restaurant-card {
+    max-width: 500px;
+    min-width: 250px;
+    width: 100%;
+    }
+
+
+    
 }
