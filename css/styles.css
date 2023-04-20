@@ -531,13 +531,6 @@ footer {
         font-weight: normal;
     }
 
-    .footer-links {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-    }
-
     #restaurants-section {
         overflow: scroll;
     }
@@ -555,4 +548,13 @@ footer {
 
 
     
+}
+
+@media screen and (min-width: 620px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }
