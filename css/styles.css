@@ -489,7 +489,7 @@ footer {
     border-radius: 50%;
     border: 10px solid lightgrey;
     border-top-color: transparent;
-    animation: rotate 750ms linear infinite;
+    animation: rotate 1s linear infinite;
 }
       
 @keyframes rotate {
