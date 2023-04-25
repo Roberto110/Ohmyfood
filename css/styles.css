@@ -137,6 +137,10 @@ font-family: 'Shrikhand';
     background-color: #e7a8fb6b;
 }
 
+.tutorial-box:hover .icon-color {
+    color: #9356DC;
+}
+
 #restaurants-section {
     background-color: rgb(246, 246, 246);
     padding-bottom: 40px;
